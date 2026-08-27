@@ -27,7 +27,7 @@ class ApiConfig {
   /// Your PC IPv4 from `ipconfig` / `ifconfig` (active Wi-Fi or Ethernet adapter).
   /// Only used when [androidMode] is [AndroidConnectionMode.physicalDevice].
   /// Example: `192.168.1.42` — replace with YOUR machine's address.
-  static const String pcLanIp = '10.162.10.243';
+  static const String pcLanIp = '10.27.117.130';
 
   static String get baseUrl {
     if (kIsWeb) return 'http://localhost:3000/api/v1';

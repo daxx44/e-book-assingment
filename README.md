@@ -318,7 +318,7 @@ Demo media is **included in this repo** under `docs/screenshots/` (no external l
 
 ### Demo video
 
-[docs/screenshots/screen-20260704-165340~2-compressed.mp4](docs/screenshots/screen-20260704-165340~2-compressed.mp4) — full walkthrough: upload, library, search, read, download, delete.
+[docs/screenshots/functionality-video.mp4](docs/screenshots/functionality-video.mp4) — full walkthrough: upload, library, search, read, download, delete.
 
 > On GitHub: open the file above and use **Download** or **View raw** to play.
 
@@ -326,18 +326,22 @@ Demo media is **included in this repo** under `docs/screenshots/` (no external l
 
 | Flow | File |
 |------|------|
-| Library / home | [Screenshot_20260704-162616.png](docs/screenshots/Screenshot_20260704-162616.png) |
-| Upload | [Screenshot_20260704-162757.png](docs/screenshots/Screenshot_20260704-162757.png) |
-| Bookshelf | [Screenshot_20260704-162832.png](docs/screenshots/Screenshot_20260704-162832.png) |
-| Search | [Screenshot_20260704-162900.png](docs/screenshots/Screenshot_20260704-162900.png) |
-| Reader | [Screenshot_20260704-163531.png](docs/screenshots/Screenshot_20260704-163531.png) |
-| Download / details | [Screenshot_20260704-163544.png](docs/screenshots/Screenshot_20260704-163544.png) |
-| Delete confirmation | [Screenshot_20260704-163552.png](docs/screenshots/Screenshot_20260704-163552.png) |
-| Downloads / About | [Screenshot_20260704-165410.png](docs/screenshots/Screenshot_20260704-165410.png) |
+| Splash | [splash.png](docs/screenshots/splash.png) |
+| Library / home | [home.png](docs/screenshots/home.png) |
+| Sort / filter | [filter.png](docs/screenshots/filter.png) |
+| Search | [search.png](docs/screenshots/search.png) |
+| Search results | [search-2.png](docs/screenshots/search-2.png) |
+| Upload | [add-book.png](docs/screenshots/add-book.png) |
+| Reader | [read.png](docs/screenshots/read.png) |
+| Chapters | [pdf-sections.png](docs/screenshots/pdf-sections.png) |
+| In-book search | [pdf-text-search.png](docs/screenshots/pdf-text-search.png) |
+| Reading settings | [pdf-text-size.png](docs/screenshots/pdf-text-size.png) |
+| Downloads | [downloads.png](docs/screenshots/downloads.png) |
+| About | [about.png](docs/screenshots/about.png) |
 
-Preview (bookshelf):-
+Preview (library home):
 
-![Bookshelf library](docs/screenshots/Screenshot_20260704-165410.png)
+![Library home](docs/screenshots/home.png)
 
 Full index: [docs/screenshots/README.md](docs/screenshots/README.md)
 
