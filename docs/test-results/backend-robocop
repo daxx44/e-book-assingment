@@ -1,0 +1,14 @@
+cd "c:\Users\Darshan\StudioProjects\E-Book app\backend"; bundle exec rubocop
+Inspecting 41 files
+....................................C....
+
+Offenses:
+
+spec/requests/api/v1/ebooks_spec.rb:91:28: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+      expect(titles).to eq(["Alpha Book", "Zebra Book"])
+                           ^
+spec/requests/api/v1/ebooks_spec.rb:91:55: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.
+      expect(titles).to eq(["Alpha Book", "Zebra Book"])
+                                                      ^
+
+41 files inspected, 2 offenses detected, 1 offense autocorrectable

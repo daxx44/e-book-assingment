@@ -1,0 +1,83 @@
+cd "c:\Users\Darshan\StudioProjects\E-Book app\backend"; $env:DATABASE_PASSWORD = "postgres"; bundle exec rspec
+(process:13952): VIPS-WARNING **: 17:18:35.086: unable to load "C:\msys64\ucrt64/lib/vips-modules-8.18\vips-heif.dll" -- 'C:\msys64\ucrt64/lib/vips-modules-8.18\vips-heif.dll': The specified module could not be found.
+
+(process:13952): VIPS-WARNING **: 17:18:35.134: unable to load "C:\msys64\ucrt64/lib/vips-modules-8.18\vips-jxl.dll" -- 'C:\msys64\ucrt64/lib/vips-modules-8.18\vips-jxl.dll': The specified module could not be found.
+
+(process:13952): VIPS-WARNING **: 17:18:35.176: unable to load "C:\msys64\ucrt64/lib/vips-modules-8.18\vips-magick.dll" -- 'C:\msys64\ucrt64/lib/vips-modules-8.18\vips-magick.dll': The specified module could not be found.
+
+(process:13952): VIPS-WARNING **: 17:18:35.218: unable to load "C:\msys64\ucrt64/lib/vips-modules-8.18\vips-openslide.dll" -- 'C:\msys64\ucrt64/lib/vips-modules-8.18\vips-openslide.dll': The specified module could not be found.
+
+(process:13952): VIPS-WARNING **: 17:18:35.255: unable to load "C:\msys64\ucrt64/lib/vips-modules-8.18\vips-poppler.dll" -- 'C:\msys64\ucrt64/lib/vips-modules-8.18\vips-poppler.dll': The specified module could not be found.
+
+Randomized with seed 15373
+
+Api::V1::Health
+  GET /api/v1/health
+    returns a successful health check response
+
+Ebook
+  scopes
+    .search_by
+      searches by author
+      is case insensitive
+      returns active ebooks when query is blank
+      excludes deleted ebooks
+      searches by title
+      searches by filename via active storage blob
+    .active
+      returns only active ebooks
+    .recent
+      orders ebooks by newest first
+    .alphabetical
+      orders ebooks by title
+  validations
+    is expected to be valid
+    normalizes blank author to nil
+    allows a missing description
+    requires an attached PDF file
+    requires a title
+    strips whitespace from title
+    rejects files larger than 100 MB
+    allows a missing author
+    rejects non-PDF files
+    normalizes blank description to nil
+  enums
+    defaults to active status
+    supports deleted status
+  associations
+    has one attached PDF file
+
+Api::V1::Ebooks
+  GET /api/v1/ebooks
+    returns an empty list when no ebooks exist
+    sorts ebooks by title when sort=title
+    lists active ebooks
+  DELETE /api/v1/ebooks/:id
+    returns not found for missing ebook
+    soft deletes an ebook
+    removes ebook from library list after delete
+  POST /api/v1/ebooks
+C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/rspec-rails-8.0.4/lib/rspec/rails/matchers/have_http_status.rb:219: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+    returns validation error for non-PDF file
+C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/rspec-rails-8.0.4/lib/rspec/rails/matchers/have_http_status.rb:219: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+    returns validation error when title is missing
+C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/rspec-rails-8.0.4/lib/rspec/rails/matchers/have_http_status.rb:219: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+    returns validation error when file is missing
+    uploads a valid PDF ebook
+  GET /api/v1/ebooks/:id
+    returns not found for deleted ebook
+    returns ebook details
+    returns not found for missing ebook
+  GET /api/v1/ebooks/:id/download
+    downloads the PDF file
+    returns not found for deleted ebook
+  GET /api/v1/ebooks/search
+    searches by title
+    returns all active ebooks when query is blank
+    searches by author
+    searches by filename
+
+Finished in 6.65 seconds (files took 42.1 seconds to load)
+42 examples, 0 failures
+
+Randomized with seed 15373
