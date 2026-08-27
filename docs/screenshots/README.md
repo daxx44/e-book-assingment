@@ -20,6 +20,7 @@ App demo captures for assignment submission.
 |------|------|
 | [splash.png](splash.png) | Splash / branding |
 | [home.png](home.png) | Library home (Continue Reading + shelf) |
+| [book-info.png](book-info.png) | Book details sheet (Read now / Download) |
 | [filter.png](filter.png) | Sort menu (Recently added / Title / Author) |
 | [search.png](search.png) | Search screen + recent queries |
 | [search-2.png](search-2.png) | Search results with highlighted match |

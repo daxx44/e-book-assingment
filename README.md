@@ -328,6 +328,7 @@ Demo media is **included in this repo** under `docs/screenshots/` (no external l
 |------|------|
 | Splash | [splash.png](docs/screenshots/splash.png) |
 | Library / home | [home.png](docs/screenshots/home.png) |
+| Book info | [book-info.png](docs/screenshots/book-info.png) |
 | Sort / filter | [filter.png](docs/screenshots/filter.png) |
 | Search | [search.png](docs/screenshots/search.png) |
 | Search results | [search-2.png](docs/screenshots/search-2.png) |
